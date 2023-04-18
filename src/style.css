@@ -1,0 +1,205 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textTodo {
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  width: auto;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 2rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.buttonload {
+  display: flex;
+  width: auto;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.fa-refresh {
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: flex-end;
+  padding: 0.5rem;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+  align-self: center;
+  border: 0.1rem solid grey;
+  padding: 0;
+  background: #9cc6ee;
+}
+
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  gap: 0.2rem;
+  padding: 0;
+}
+
+.right {
+  display: flex;
+  order: 2;
+}
+
+.listSection {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+.listcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.4rem;
+  margin: 0;
+  border: 0.1rem solid;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 0;
+  order: 2;
+}
+
+.checkBox {
+  display: flex;
+  width: auto;
+  order: 1;
+}
+
+.newAddList {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  border: none;
+  padding: 0.2rem;
+  margin: 0;
+  order: 1;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.vertical {
+  display: flex;
+  align-items: flex-end;
+  order: 3;
+  color: gray;
+  cursor: pointer;
+}
+
+.delete {
+  display: flex;
+  align-items: flex-end;
+  order: 3;
+  color: red;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.addBtn {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  cursor: pointer;
+  width: 2rem;
+  height: 1.5rem;
+  color: #badb39;
+}
+
+.error {
+  display: none;
+  font-size: 1rem;
+  color: red;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;
+    width: auto;
+  }
+
+  .todo {
+    display: flex;
+    width: 30%;
+    justify-self: center;
+  }
+}
