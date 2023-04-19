@@ -62,13 +62,13 @@ export default class Todos {
         this.updateIndexes();
       }
     });
-    this.updateIndexes(); 
-    
+    this.updateIndexes();
+
     const $editButton = document.getElementById(`edit-${item.description}`);
     $editButton.addEventListener('click', () => {
-      const $inputField = document.getElementById('input'); 
+      const $inputField = document.getElementById('input');
       $inputField.value = item.description;
-      const $addButton = document.getElementById('addBtn'); 
+      const $addButton = document.getElementById('addBtn');
 
       $addButton.addEventListener('click', () => {
         const newDescription = $inputField.value;
@@ -76,7 +76,6 @@ export default class Todos {
 
         if (newDescription !== '' && newDescription !== item.description) {
           if (indexToEdit > -1) {
-
             this.edit(indexToEdit, newDescription);
             $editButton.id = `edit-${newDescription}`;
             $editButton.textContent = newDescription;
@@ -87,7 +86,6 @@ export default class Todos {
         }
       });
     });
-
   };
 
   edit = (indexToEdit, newDescription) => {
@@ -107,7 +105,7 @@ export default class Todos {
   remove = (indexToRemove) => {
     const todoToRemove = this.todoList[indexToRemove];
 
-    if (todoToRemove) { 
+    if (todoToRemove) {
       const { parentElement } = document.getElementById(todoToRemove.description);
       if (parentElement) {
         parentElement.remove();
