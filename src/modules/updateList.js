@@ -1,10 +1,9 @@
 import Todos from '../print.js';
 
-// Access the add button
 const $error = document.querySelector('.error');
 const $list = document.querySelector('input');
 const $addBtn = document.querySelector('.addBtn');
-/* const $listSection = document.querySelector('.lists') */
+
 const ListObj = new Todos();
 
 const UpdateList = () => {
